@@ -20,7 +20,7 @@ if answer=="yes" or answer == "Yes" or answer == "YES" or answer == "yeah!" or a
                 exit()
 elif answer == "maybe":
     print(c.b + "how indecisive, the choice is obvious (yes)" + c.x) 
-elif answer=="no" or answer ==  "NO" or answer == "NOPE":    
+elif answer=="no" or answer ==  "NO" or answer == "NOPE" or answer == "nope":    
     print(c.r + "you're dead to me" + c.x)
 else:
     print(c.yellow  + "well I do. That doesn't make any sense (system error 0x00Idon'tunderstand0006) :(")
