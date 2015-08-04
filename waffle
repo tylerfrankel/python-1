@@ -6,14 +6,14 @@ print (c.g + "do you like waffles" + c.reset)
  
 answer=input("-->")
 
-if answer=="yes" or answer == "Yes" or answer == "YES" or answer == "yeah!" or answer == "yeah we like waffles" or answer == "yeah I like waffles" or answer == "YEAH WE LIKE WAFFLES" or answer == "YEAH I LIKE WAFFLES":
+if answer=="yes" or answer == "Yes" or answer == "YES" or answer == "yeah!" or answer== "yeah"  or answer == "yeah we like waffles" or answer == "yeah I like waffles" or answer == "YEAH WE LIKE WAFFLES" or answer == "YEAH I LIKE WAFFLES":
     print(c.r + "Do you like pancakes" + c.x )
     answer=input ("-->")
-    if answer== "yes" or answer=="Yes":
-        print(c.y + "do you like french toast?" + c.x)
-        answer=input ("-->") 
-        if answer== "yes" or answer== "Yes":
-            print(c.green + "DOO-DO-DO-DO" + c.y + "Can't" + c.r + " wait" + c.b +  " to" + c.orange + " get" + c.v +" a" + c.m + " mouthful!" + c.x)
+    if answer== "yes" or answer=="Yes" or answer== "yeah" or answer== "YES" or answer== "Yeah!" or answer== "yeah we like pancakes" or answer== "yeah I like pancakes" or answer == "YEAH WE LIKE PANCAKES" or answer== "YEAH I LIKE PANCAKES":
+         print(c.y + "do you like french toast?" + c.x)
+         answer=input ("-->") 
+         if answer== "yes" or answer== "Yes" or answer== "yeah" or answer== "Yeah!" or answer== "YES" or answer== "yeah we like french toast" or answer== "yeah I like french toast" or answer== "YEAH WE LIKE FRENCH TOAST" or answer== "YEAH I LIKE FRENCH TOAST":
+            print(c.green + "DOO-DO-DO-DO" + c.y + " Can't" + c.r + " wait" + c.b +  " to" + c.orange + " get" + c.v +" a" + c.m + " mouthful!" + c.x)
             print("press E and enter to exit")
             e=input()
             if e == 'E' or e == 'e':
