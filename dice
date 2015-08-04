@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+
+sides = ["1","2","3","4","5","6"]
+
+for n in range(6):
+    print("index", n, "is side, sides[n])
+
+
+n = 0
+while n < 6:
+    print("n:", n)
+    print("side:",sides[n])
+    n = n + 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

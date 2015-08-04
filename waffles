@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print (c.yellow + "waffles waffles waffles" + c.reset)
+
+
+
+
