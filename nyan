@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.y + "press ctrl - c at any time to shut off the program" + c.x)
+print(c.r + "Warning. If you have siezures do not use this program. type no to cancel. If you understan the risks of using this program (flashing colors and lights), type yes" +  c.x)
+warn=input ("-->")
+
+if warn == "yes" or warn == "Yes":
+    
+    try:
+        while True:
+            print(c.rc() + "Nyan" + c.x, end='')
+    except KeyboardInterrupt:
+        print(c.clear)
+        exit()
+elif warn == "no" or warn == "No":
+    print(c.clear)
+    exit()
+ 
