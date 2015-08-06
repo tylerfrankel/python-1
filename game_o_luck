@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random
+
+print(c.g + "welcome to the game of luck, made by Tyler F. Do you wish to play? (y/n or h for help)" + c.x)
+
+a=input("-->")
+
+if a == "y" or a == "Y" or a == "Yes" or a == "yes":
+
+    print(c.clear)
+ 
+  luck = [] 
+         
+  luck.append(c.r + "lose $100" + c.x)
+  luck.append(c.o + "lose $10" + c.x)
+  luck.append(c.b + "lose $1" + c.x)
+  luck.append(c.c + "make $1" + c.x)
+  luck.append(c.g + "make $10" + c.x)
+  luck.append(c.y + "make $100" + c.x)
+ 
+  while True:
+    luck = random.choice(luck)
+    print("you: " + luck)
+    input()
+  
+elif a == "n" or a == "N" or a == "no" or a == "No":
+  print(c.clear)
+  exit()
+
+elif a == "h" or a == "H" or a == "Help" or a == "help":
+  print(c.y + "this is the help page." + c.x)
+  print("                            ")
+  print(c.g + "In this game you are a gambler. Press enter to try your luck at either making or losing money! In the future reaching $0 will end the game and reaching $1,000+ will declare you winner. this is currently a single player game, but again in the future this may change. pressing enter is currently the only control! type ctrl c simultaneously to stop the game" + c.x)
+  print("type s to start")
+
+i=input("-->") 
+if i == "s" or i == "S" or i == "Start" or i == "start":
+
+    print(c.clear)
+  
+    luck = [] 
+         
+    luck.append(c.r + "lose $100" + c.x)
+    luck.append(c.o + "lose $10" + c.x)
+    luck.append(c.b + "lose $1" + c.x)
+    luck.append(c.c + "make $1" + c.x)
+    luck.append(c.g + "make $10" + c.x)
+    luck.append(c.y + "make $100" + c.x)
+
+    while True:
+        luck  = random.choice(luck)
+    print("you: " + luck)
+    input()
+
+else:
+    print(c.r + "huh? try again, thats not a proper command. format your answer as h, y, s, H, Y, S, Help, Yes, No, help, yes, or no")  
